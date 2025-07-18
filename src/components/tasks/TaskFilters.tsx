@@ -1,7 +1,9 @@
 import React from 'react';
 import { Task, Project } from '../../types';
 import { Search, Filter, X } from 'lucide-react';
-import { Card } from '../ui/Card';
+import { Card } from '../../ui/Card';
+
+
 import { Badge } from '../ui/Badge';
 
 interface TaskFiltersProps {
