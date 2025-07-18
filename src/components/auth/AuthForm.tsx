@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useAuth } from '../../hooks/useAuth';
 import { Button } from '../ui/Button';
 import { Input } from '../ui/Input';
-import { Card } from '../ui/Card';
+
 import { LoadingSpinner } from '../ui/LoadingSpinner';
 import { Mail, Lock, User, Sparkles, Shield, Zap } from 'lucide-react';
 
@@ -90,7 +90,7 @@ export const AuthForm: React.FC = () => {
           </div>
         </div>
         
-        <Card variant="glass" className="backdrop-blur-xl">
+        <div className="rounded-lg shadow bg-white p-6">
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="space-y-4">
               <Input
@@ -176,7 +176,7 @@ export const AuthForm: React.FC = () => {
               </button>
             </div>
           </form>
-        </Card>
+        </div>
 
         {/* Footer */}
         <div className="text-center text-xs text-gray-500">
