@@ -239,7 +239,7 @@ export const Dashboard: React.FC = () => {
                 </button>
               )}
             </div>
-          </Card>
+          </div>
         )}
       </main>
 
@@ -330,7 +330,8 @@ const StatsCard: React.FC<StatsCardProps> = ({
   subtitle,
   subtitleColor = "text-gray-500"
 }) => (
-  <Card variant="glass" className="group">
+  <div className="rounded-xl shadow bg-white p-4 group">
+
     <div className="flex items-center">
       <div className="flex-shrink-0">
         <div className={`p-3 ${bgColor} rounded-xl ${hoverColor} transition-colors duration-200`}>
@@ -345,5 +346,5 @@ const StatsCard: React.FC<StatsCardProps> = ({
         )}
       </div>
     </div>
-  </Card>
+  </div>
 );
