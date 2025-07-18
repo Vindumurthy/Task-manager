@@ -216,7 +216,7 @@ export const Dashboard: React.FC = () => {
             ))}
           </div>
         ) : (
-          <Card variant="glass" className="text-center py-16">
+          <div className="rounded-xl shadow bg-white p-4 group">
             <div className="max-w-md mx-auto">
               <div className="p-4 bg-gray-100 rounded-full w-fit mx-auto mb-4">
                 <FolderOpen className="w-8 h-8 text-gray-400" />
